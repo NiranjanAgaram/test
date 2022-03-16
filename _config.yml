@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Niranjan Agaram / Blog"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Niranjan Agarma"
 description              : &description "personal description"
 url                      : https://niranjanagaram.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
@@ -80,8 +80,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
+  name             : "Niranjan Agaram"
+  avatar           : "Niranjan.png"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
   employer         :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "NiranjanAgaram"
   google_plus      :
   keybase          :
   instagram        :
