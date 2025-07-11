@@ -1,14 +1,25 @@
 ---
+<<<<<<< HEAD
 ---
 
 <!doctype html>
 {% include copyright.html %}
 <html lang="{{ site.locale | replace: "_", "-" | default: "en" }}" class="no-js">
+=======
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   <head>
     {% include head.html %}
     {% include head/custom.html %}
   </head>
 
+<<<<<<< HEAD
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
     {% include_cached skip-links.html %}
     {% include_cached masthead.html %}
@@ -28,9 +39,26 @@
       <footer>
         {% include footer/custom.html %}
         {% include_cached footer.html %}
+=======
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
       </footer>
     </div>
 
     {% include scripts.html %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   </body>
 </html>

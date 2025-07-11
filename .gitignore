@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Vim
 *~
 *.sw[p_]
@@ -30,3 +31,7 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+=======
+_site/
+
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

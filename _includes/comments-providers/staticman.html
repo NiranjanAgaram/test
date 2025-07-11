@@ -1,11 +1,20 @@
 {% if site.repository and site.staticman.branch %}
   <script>
     (function ($) {
+<<<<<<< HEAD
+=======
+    var $comments = $('.js-comments');
+
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
     $('#new_comment').submit(function () {
       var form = this;
 
       $(form).addClass('disabled');
+<<<<<<< HEAD
       $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> {{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}');
+=======
+      $('#comment-form-submit').html('<i class="fa fa-spinner fa-spin fa-fw"></i> {{ site.data.ui-text[site.locale].loading_label | default: "Loading..." }}');
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 
       $.ajax({
         type: $(this).attr('method'),
@@ -37,4 +46,8 @@
     }
   })(jQuery);
   </script>
+<<<<<<< HEAD
 {% endif %}
+=======
+{% endif %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

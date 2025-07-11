@@ -18,7 +18,11 @@
 
 <!-- Uniq -->
 {% assign __names =  __names | sort %}
+<<<<<<< HEAD
 {% for name in __names %}
+=======
+{% for name in __names | sort %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 
 <!-- If not equal to previous then it must be unique as sorted -->
 {% unless name == previous %}

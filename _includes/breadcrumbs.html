@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 {% case site.category_archive.type %}
+=======
+{% include base_path %}
+
+{% case site.categories.type %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   {% when "liquid" %}
     {% assign path_type = "#" %}
   {% when "jekyll-archives" %}
@@ -9,32 +15,57 @@
   {% assign path_type = nil %}
   {% assign crumb_path = '/' %}
 {% else %}
+<<<<<<< HEAD
   {% assign crumb_path = site.category_archive.path %}
 {% endif %}
 
 <nav class="breadcrumbs">
   <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+=======
+  {% assign crumb_path = site.categories.path %}
+{% endif %}
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
     {% assign crumbs = page.url | split: '/' %}
     {% assign i = 1 %}
     {% for crumb in crumbs offset: 1 %}
       {% if forloop.first %}
+<<<<<<< HEAD
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="{{ '/' | relative_url }}" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
 
+=======
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="{{ base_path }}/" itemprop="item"><span itemprop="name">{{ site.data.ui-text[site.locale].breadcrumb_home_label | default: "Home" }}</span></a>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
       {% if forloop.last %}
+<<<<<<< HEAD
         <li class="current"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</li>
       {% else %}
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | url_decode | replace: '-', ' ' | capitalize }}</span></a>
+=======
+        <li class="current">{{ page.title }}</li>
+      {% else %}
+        {% assign i = i | plus: 1 %}
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="{{ base_path }}{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
       {% endif %}
     {% endfor %}
   </ol>
+<<<<<<< HEAD
 </nav>
+=======
+</nav>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

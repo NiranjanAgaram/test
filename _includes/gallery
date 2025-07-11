@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 {% if include.id %}
   {% assign gallery = page[include.id] %}
+=======
+{% include base_path %}
+
+{% if include.id %}
+  {% assign gallery = page.[include.id] %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 {% else %}
   {% assign gallery = page.gallery %}
 {% endif %}
 
+<<<<<<< HEAD
 {% if include.layout %}
   {% assign gallery_layout = include.layout %}
 {% else %}
@@ -14,11 +22,20 @@
   {% else %}
     {% assign gallery_layout = '' %}
   {% endif %}
+=======
+{% if gallery.size == 2 %}
+  {% assign gallery_layout = 'half' %}
+{% elsif gallery.size >= 3 %}
+  {% assign gallery_layout = 'third' %}
+{% else %}
+  {% assign gallery_layout = '' %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 {% endif %}
 
 <figure class="{{ gallery_layout }} {{ include.class }}">
   {% for img in gallery %}
     {% if img.url %}
+<<<<<<< HEAD
       <a href="{{ img.url | relative_url }}"
         {% if img.title %}title="{{ img.title }}"{% endif %}>
           <img src="{{ img.image_path | relative_url }}"
@@ -27,9 +44,39 @@
     {% else %}
       <img src="{{ img.image_path | relative_url }}"
            alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+=======
+      <a href=
+        {% if img.url contains "://" %}
+          "{{ img.url }}"
+        {% else %}
+          "{{ img.url | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+      >
+        <img src=
+          {% if img.image_path contains "://" %}
+            "{{ img.image_path }}"
+          {% else %}
+            "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      </a>
+    {% else %}
+      <img src=
+        {% if img.image_path contains "://" %}
+          "{{ img.image_path }}"
+        {% else %}
+          "{{ img.image_path | prepend: "/images/" | prepend: base_path }}"
+        {% endif %}
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
     {% endif %}
   {% endfor %}
   {% if include.caption %}
     <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
   {% endif %}
+<<<<<<< HEAD
 </figure>
+=======
+</figure>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

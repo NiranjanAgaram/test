@@ -3,36 +3,56 @@
 # English (default)
 # -----------------
 en: &DEFAULT_EN
+<<<<<<< HEAD
   skip_links                 : "Skip links"
   skip_primary_nav           : "Skip to primary navigation"
   skip_content               : "Skip to content"
   skip_footer                : "Skip to footer"
+=======
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Page"
   pagination_previous        : "Previous"
   pagination_next            : "Next"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 : "Toggle menu"
   search_label               : "Toggle search"
   toc_label                  : "On this page"
   ext_link_label             : "Direct link"
+=======
+  toc_label                  : "On This Page"
+  ext_link_label             : "Direct Link"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   less_than                  : "less than"
   minute_read                : "minute read"
   share_on_label             : "Share on"
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categories:"
+<<<<<<< HEAD
   date_label                 : "Updated:"
   comments_label             : "Leave a comment"
   comments_title             : "Comments"
   more_label                 : "Learn more"
   related_label              : "You may also enjoy"
+=======
+  date_label                 : "Published:"
+  comments_label             : "Leave a Comment"
+  comments_title             : "Comments"
+  more_label                 : "Learn More"
+  related_label              : "You May Also Enjoy"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   follow_label               : "Follow:"
   feed_label                 : "Feed"
   powered_by                 : "Powered by"
   website_label              : "Website"
   email_label                : "Email"
+<<<<<<< HEAD
   recent_posts               : "Recent posts"
+=======
+  recent_posts               : "Recent Posts"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   undefined_wpm              : "Undefined parameter words_per_minute at _config.yml"
   comment_form_info          : "Your email address will not be published. Required fields are marked"
   comment_form_comment_label : "Comment"
@@ -40,16 +60,23 @@ en: &DEFAULT_EN
   comment_form_name_label    : "Name"
   comment_form_email_label   : "Email address"
   comment_form_website_label : "Website (optional)"
+<<<<<<< HEAD
   comment_btn_submit         : "Submit comment"
+=======
+  comment_btn_submit         : "Submit Comment"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   comment_btn_submitted      : "Submitted"
   comment_success_msg        : "Thanks for your comment! It will show on the site once it has been approved."
   comment_error_msg          : "Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again."
   loading_label              : "Loading..."
+<<<<<<< HEAD
   search_label_text          : "Enter your search term..."
   search_placeholder_text    : "Enter your search term..."
   search_algolia_no_results  : "No results"
   results_found              : "Result(s) found"
   back_to_top                : "Back to top"
+=======
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -60,17 +87,23 @@ en-AU:
   <<: *DEFAULT_EN
 
 # Spanish
+<<<<<<< HEAD
 # -------
 es: &DEFAULT_ES
   skip_links                 : "Saltar enlaces"
   skip_primary_nav           : "Saltar a navegación principal"
   skip_content               : "Saltar a contenido"
   skip_footer                : "Saltar a pie"
+=======
+# --------------
+es: &DEFAULT_ES
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Siguiente"
   breadcrumb_home_label      : "Inicio"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 : "Alternar menú"
   search_label               : "Alternar búsqueda"
   toc_label                  : "En esta página"
@@ -78,10 +111,18 @@ es: &DEFAULT_ES
   less_than                  : "menos de"
   minute_read                : "minuto(s) de lectura"
   share_on_label             : "Compartir en"
+=======
+  toc_label                  : "Contenidos"
+  ext_link_label             : "Enlace"
+  less_than                  : "menos de"
+  minute_read                : "minuto de lectura"
+  share_on_label             : "Compartir"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   meta_label                 :
   tags_label                 : "Etiquetas:"
   categories_label           : "Categorías:"
   date_label                 : "Actualizado:"
+<<<<<<< HEAD
   comments_label             : "Deja un comentario"
   comments_title             : "Comentarios"
   more_label                 : "Ver más"
@@ -109,45 +150,89 @@ es: &DEFAULT_ES
   search_algolia_no_results  :
   results_found              : "resultado(s) encontrado(s)"
   back_to_top                : "Volver arriba"
+=======
+  comments_label             : "Comentar"
+  comments_title             :
+  more_label                 : "Ver más"
+  related_label              : "Podrías ver también"
+  follow_label               : "Seguir:"
+  feed_label                 : "Feed"
+  powered_by                 : "Powered by"
+  website_label              : "Sitio web"
+  email_label                : "Email"
+  recent_posts               : "Entradas recientes"
+  undefined_wpm              : "Parametro words_per_minute (Palabras por minuto) no definido en _config.yml"
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
   <<: *DEFAULT_ES
 
 # French
+<<<<<<< HEAD
 # ------
 fr: &DEFAULT_FR
   skip_links                 :
   skip_primary_nav           :
   skip_content               :
   skip_footer                :
+=======
+# -----------------
+fr: &DEFAULT_FR
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Page"
   pagination_previous        : "Précédent"
   pagination_next            : "Suivant"
   breadcrumb_home_label      : "Accueil"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 : "Menu"
   search_label               :
   toc_label                  : "Sur cette page"
   ext_link_label             : "Lien direct"
   less_than                  : "moins de"
   minute_read                : "minute(s) de lecture"
+=======
+  toc_label                  : "Sur cette page"
+  ext_link_label             : "Lien direct"
+  less_than                  : "plus petit que"
+  minute_read                : "minute de lecture"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   share_on_label             : "Partager sur"
   meta_label                 :
   tags_label                 : "Tags :"
   categories_label           : "Catégories :"
   date_label                 : "Mis à jour :"
   comments_label             : "Laisser un commentaire"
+<<<<<<< HEAD
   comments_title             : "Commentaires"
   more_label                 : "Lire plus"
   related_label              : "Vous pourriez aimer aussi"
   follow_label               : "Contact"
+=======
+  comments_title             :
+  more_label                 : "Lire plus"
+  related_label              : "Vous pourriez aimer"
+  follow_label               : "Suivez moi"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   feed_label                 : "Flux"
   powered_by                 : "Propulsé par"
   website_label              : "Site"
   email_label                : "Email"
   recent_posts               : "Posts récents"
   undefined_wpm              : "Le paramètre words_per_minute n'est pas défini dans _config.yml"
+<<<<<<< HEAD
   comment_form_info          : "Votre adresse email ne sera pas visible. Les champs obligatoires sont marqués"
   comment_form_comment_label : "Commentaire"
   comment_form_md_info       : "Markdown est supporté."
@@ -164,6 +249,19 @@ fr: &DEFAULT_FR
   search_algolia_no_results  :
   results_found              : "Résultat(s) trouvé(s)"
   back_to_top                : "Retour en haut"
+=======
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 fr-FR:
   <<: *DEFAULT_FR
 fr-BE:
@@ -172,19 +270,27 @@ fr-CH:
   <<: *DEFAULT_FR
 
 # Turkish
+<<<<<<< HEAD
 # -------
 tr: &DEFAULT_TR
   skip_links                 :
   skip_primary_nav           :
   skip_content               :
   skip_footer                :
+=======
+# -----------------
+tr: &DEFAULT_TR
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Sayfa"
   pagination_previous        : "Önceki"
   pagination_next            : "Sonraki"
   breadcrumb_home_label      : "Ana Sayfa"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 :
   search_label               :
+=======
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   toc_label                  : "İçindekiler"
   ext_link_label             : "Doğrudan Bağlantı"
   less_than                  : "Şu süreden az: "
@@ -195,7 +301,11 @@ tr: &DEFAULT_TR
   categories_label           : "Kategoriler:"
   date_label                 : "Güncelleme tarihi:"
   comments_label             : "Yorum yapın"
+<<<<<<< HEAD
   comments_title             : "Yorumlar"
+=======
+  comments_title             :
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   more_label                 : "Daha fazlasını öğrenin"
   related_label              : "Bunlar ilginizi çekebilir:"
   follow_label               : "Takip et:"
@@ -205,6 +315,7 @@ tr: &DEFAULT_TR
   email_label                : "E-posta"
   recent_posts               : "Son yazılar"
   undefined_wpm              : "_config.yml dosyasında tanımlanmamış words_per_minute parametresi"
+<<<<<<< HEAD
   comment_form_info          : "Email adresiniz gösterilmeyecektir. Zorunlu alanlar işaretlenmiştir"
   comment_form_comment_label : "Yorumunuz"
   comment_form_md_info       : "Markdown desteklenmektedir."
@@ -276,11 +387,31 @@ pt-BR:
   skip_primary_nav           : "Pular para navegação primária"
   skip_content               : "Pular para conteúdo"
   skip_footer                : "Pular para rodapé"
+=======
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
+tr-TR:
+  <<: *DEFAULT_TR
+
+# Brazilian Portguese
+# -----------------
+pt: &DEFAULT_PT
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Página"
   pagination_previous        : "Anterior"
   pagination_next            : "Próxima"
   breadcrumb_home_label      : "Início"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 : "Chavear menu"
   search_label               : "Chavear busca"
   toc_label                  : "Nesta página"
@@ -288,11 +419,19 @@ pt-BR:
   less_than                  : "menos de"
   minute_read                : "minuto(s) de leitura"
   share_on_label             : "Compartilhe"
+=======
+  toc_label                  : "Nesta página"
+  ext_link_label             : "Link direto"
+  less_than                  : "menor que"
+  minute_read                : "minutos de leitura"
+  share_on_label             : "Compartilhe em"
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   meta_label                 :
   tags_label                 : "Tags:"
   categories_label           : "Categorias:"
   date_label                 : "Atualizado em:"
   comments_label             : "Deixe um comentário"
+<<<<<<< HEAD
   comments_title             : "Comentários"
   more_label                 : "Saiba mais"
   related_label              : "Talvez você também goste"
@@ -327,13 +466,47 @@ it: &DEFAULT_IT
   skip_primary_nav           :
   skip_content               :
   skip_footer                :
+=======
+  comments_title             :
+  more_label                 : "Aprenda Mais"
+  related_label              : "Talvez Você Goste Também"
+  follow_label               : "Acompanhe em"
+  feed_label                 : "Feed"
+  powered_by                 : "Feito por"
+  website_label              : "Site"
+  email_label                : "E-mail"
+  recent_posts               : "Postagens recentes"
+  undefined_wpm              : "Parâmetro indefinido em word_per_minute no _config.yml"
+  comment_form_info          : "Seu endereço de e-mail não será publicado. Campos obrigatórios são marcados"
+  comment_form_comment_label : "Comentário"
+  comment_form_md_info       : "Markdown é suportado"
+  comment_form_name_label    : "Nome"
+  comment_form_email_label   : "Endereço de e-mail'"
+  comment_form_website_label : "Website (opcional)"
+  comment_btn_submit         : "Enviar Comentário"
+  comment_btn_submitted      : "Enviado"
+  comment_success_msg        : "Obrigado por seu comentário! Ele será exibido no site depois de aprovado."
+  comment_error_msg          : "Desculpe, houve um erro com o seu envio. Certifique-se de que todos os campos obrigatórios foram preenchidos e tente novamente."
+  loading_label              : "Carregando..."
+pt-BR:
+  <<: *DEFAULT_PT
+pt-PT:
+  <<: *DEFAULT_PT
+
+# Italian
+# -----------------
+it: &DEFAULT_IT
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   page                       : "Pagina"
   pagination_previous        : "Precedente"
   pagination_next            : "Prossima"
   breadcrumb_home_label      : "Home"
   breadcrumb_separator       : "/"
+<<<<<<< HEAD
   menu_label                 :
   search_label               :
+=======
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
   toc_label                  : "Indice della pagina"
   ext_link_label             : "Link"
   less_than                  : "meno di"
@@ -354,6 +527,7 @@ it: &DEFAULT_IT
   email_label                : "Email"
   recent_posts               : "Articoli Recenti"
   undefined_wpm              : "Parametro words_per_minute non definito in _config.yml"
+<<<<<<< HEAD
   comment_form_info          : "Il tuo indirizzo email non sarà pubblicato. Sono segnati i campi obbligatori"
   comment_form_comment_label : "Commenta"
   comment_form_md_info       : "Il linguaggio Markdown è supportato"
@@ -2183,3 +2357,21 @@ bg-BG:
 # Another locale
 # --------------
 #
+=======
+  comment_form_info          :
+  comment_form_comment_label :
+  comment_form_md_info       :
+  comment_form_name_label    :
+  comment_form_email_label   :
+  comment_form_website_label :
+  comment_btn_submit         :
+  comment_btn_submitted      :
+  comment_success_msg        :
+  comment_error_msg          :
+  loading_label              :
+it-IT:
+  <<: *DEFAULT_IT
+
+# Another locale
+# --------------
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

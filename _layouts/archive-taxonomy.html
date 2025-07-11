@@ -3,6 +3,7 @@ layout: default
 author_profile: false
 ---
 
+<<<<<<< HEAD
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
 {% elsif page.header.video.id and page.header.video.provider %}
@@ -15,15 +16,26 @@ author_profile: false
   {% endunless %}
 {% endif %}
 
+=======
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 <div id="main" role="main">
   {% include sidebar.html %}
 
   <div class="archive">
+<<<<<<< HEAD
     {% unless page.header.overlay_color or page.header.overlay_image %}
       <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ page.title }}</h1>
     {% endunless %}
+=======
+    <h1 class="page__title">{{ page.title }}</h1>
+    {% include base_path %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
     {% for post in page.posts %}
       {% include archive-single.html %}
     {% endfor %}
   </div>
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93

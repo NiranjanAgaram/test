@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 {% if include.id %}
   {% assign feature_row = page[include.id] %}
+=======
+{% include base_path %}
+
+{% if include.id %}
+  {% assign feature_row = page.[include.id] %}
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
 {% else %}
   {% assign feature_row = page.feature_row %}
 {% endif %}
@@ -7,15 +14,35 @@
 <div class="feature__wrapper">
 
   {% for f in feature_row %}
+<<<<<<< HEAD
+=======
+
+    {% if f.url contains "://" %}
+      {% capture f_url %}{{ f.url }}{% endcapture %}
+    {% else %}
+      {% capture f_url %}{{ f.url | prepend: base_path }}{% endcapture %}
+    {% endif %}
+
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
     <div class="feature__item{% if include.type %}--{{ include.type }}{% endif %}">
       <div class="archive__item">
         {% if f.image_path %}
           <div class="archive__item-teaser">
+<<<<<<< HEAD
             <img src="{{ f.image_path | relative_url }}"
                  alt="{% if f.alt %}{{ f.alt }}{% endif %}">
             {% if f.image_caption %}
               <span class="archive__item-caption">{{ f.image_caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
             {% endif %}
+=======
+            <img src=
+              {% if f.image_path contains "://" %}
+                "{{ f.image_path }}"
+              {% else %}
+                "{{ f.image_path | prepend: "/images/" | prepend: base_path }}"
+              {% endif %}
+            alt="{% if f.alt %}{{ f.alt }}{% endif %}">
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
           </div>
         {% endif %}
 
@@ -31,11 +58,19 @@
           {% endif %}
 
           {% if f.url %}
+<<<<<<< HEAD
             <p><a href="{{ f.url | relative_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+=======
+            <p><a href="{{ f_url }}" class="btn {{ f.btn_class }}">{{ f.btn_label | default: site.data.ui-text[site.locale].more_label | default: "Learn More" }}</a></p>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
           {% endif %}
         </div>
       </div>
     </div>
   {% endfor %}
 
+<<<<<<< HEAD
 </div>
+=======
+</div>
+>>>>>>> fa0c92ee49ea3283d766bbdbe7778f8cabe01d93
