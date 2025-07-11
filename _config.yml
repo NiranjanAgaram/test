@@ -17,12 +17,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : "Niranjan's Blog" 
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : "Data Engineering, ML and Analytics" # site tagline that appears below site title in masthead
+name                     : "Niranjan"
+description              : "A data enginner's journey through the world of data, machine learning, and analytics. Join me as I explore the latest trends, tools, and techniques in the field of data engineering and share my insights on building scalable data pipelines, implementing machine learning models, and leveraging analytics for business intelligence."
+url                      : "niranjan/niranjan.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -99,8 +99,8 @@ og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
+  type                   : "Person" # Person or Organization (defaults to Person)
+  name                   : "Niranjan" # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
 
 # Analytics
@@ -113,11 +113,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Niranjan Agaram"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Data Engineer with a passion for building scalable data pipelines and implementing machine learning models. I enjoy exploring the latest trends in data engineering, analytics, and machine learning, and sharing my insights with the community."
+  location         : "Bengaluru, India"
+  email            : "niranjanagaram@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
